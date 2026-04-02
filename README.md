@@ -1,5 +1,7 @@
 # GlowNaturals — Natural Skincare E-Commerce Store
 
+🔗🚀Live Demo: https://glow-naturals-app-yezb.vercel.app/
+
 > **Pure Beauty, Naturally Radiant** — A fully functional, professional e-commerce store built with React, Express.js, and SQLite.
 
 ## Brand Overview
