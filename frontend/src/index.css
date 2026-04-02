@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2D5016;
+  --color-primary-light: #3D6B1E;
+  --color-primary-dark: #1E3A0E;
+  --color-secondary: #F5E6D3;
+  --color-secondary-light: #FBF3EA;
+  --color-secondary-dark: #E8D4BC;
+  --color-accent: #D4A574;
+  --color-accent-light: #E2BE96;
+  --color-accent-dark: #C08B55;
+  --color-cream: #FFFAF5;
+  --color-text-dark: #1A1A1A;
+  --color-text-medium: #4A4A4A;
+  --color-text-light: #7A7A7A;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-star: #F59E0B;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-secondary-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-dark);
+}
+
+/* Page content styling */
+.page-content h1 { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; font-family: var(--font-heading); }
+.page-content h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; font-family: var(--font-heading); }
+.page-content h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.page-content p { margin-bottom: 1rem; line-height: 1.75; color: var(--color-text-medium); }
+.page-content ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+.page-content ol { list-style: decimal; padding-left: 1.5rem; margin-bottom: 1rem; }
+.page-content li { margin-bottom: 0.5rem; line-height: 1.6; color: var(--color-text-medium); }
+.page-content strong { font-weight: 600; color: var(--color-text-dark); }
+.page-content em { font-style: italic; }
+
+/* Product description styling */
+.product-description h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+.product-description p { margin-bottom: 0.75rem; line-height: 1.7; color: var(--color-text-medium); }
+.product-description ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.75rem; }
+.product-description li { margin-bottom: 0.35rem; line-height: 1.6; color: var(--color-text-medium); }
